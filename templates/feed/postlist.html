@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    <h1>Post list</h1>
+    {% for i in posts  %}
+    <hr>
+    <hr>
+    <h4>{{i.caption}}<h4>
+    <img src='/media/{{i.attachment}}' height="300px" alt="">
+    <hr>
+    <a href="#">likes:</a>  <span>{{i.likes}}</span>
+    <hr>
+    {% endfor %}
+   
+   
+    
+</body>
+</html>
